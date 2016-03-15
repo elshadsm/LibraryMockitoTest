@@ -17,7 +17,7 @@ public class Library_Test {
     Book book = mock( Book.class );
     when( book.getTitle() )
       .thenReturn( "Professional Java for Web Applications" );
-    assertEquals( book.getTitle(), "Professional Java for Web Applications" );
+    assertEquals( "Professional Java for Web Applications", book.getTitle() );
   }
 
   @Test(expected = ArrayIndexOutOfBoundsException.class)
