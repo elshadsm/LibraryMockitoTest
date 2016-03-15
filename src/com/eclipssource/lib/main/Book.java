@@ -26,4 +26,9 @@ public class Book {
     return this.title;
   }
 
+  @Override
+  public String toString() {
+    return "Book [title=" + title + ", borrowed=" + borrowed + "]";
+  }
+  
 }
