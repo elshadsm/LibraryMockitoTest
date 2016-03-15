@@ -38,13 +38,10 @@ public class Library_Test {
   @Test
   public void testAvailableBook() {
     Book book = mock( Book.class );
-    when( book.getTitle() )
-      .thenReturn( "Professional Java for Web Applications" );
+    when( book.getTitle() ).thenReturn( "Professional Java for Web Applications" );
     when( book.isBorrowed() ).thenReturn( false );
     library.getBookList().add( book );
-    assertEquals( book,
-                  library
-                    .getAvailableBook( "Professional Java for Web Applications" ) );
+    assertEquals( book, library.getAvailableBook( "Professional Java for Web Applications" ) );
   }
   //
   // @Test
